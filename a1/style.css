@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Font1';
+    src: url('./fonts/impact.ttf') format('truetype');
+  }
+  
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+  }
+  
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 500px;
+    height: 500px;
+    border: 5px solid black;
+    margin: 20px auto;
+}
+  
+  img {
+    max-width:500px;
+    height: auto;
+    margin-top: 24%;
+    transform: scaleX(-1);
+}
+  /* Advanced Settings text */
+  .adv {
+    position: absolute;
+    font-family: 'Arial';
+    font-size: 25px;
+    top: 10%;
+    left: 20%;
+    transform: translate(-12%, -30%);
+    color: #000000;}
+  
+  /* See more button text */
+  .sm {
+    position: absolute;
+    font-family: 'Arial';
+    font-size: 25px;
+    line-height: 100%;
+    top: 43%;
+    left: 70%;
+    right: 0%;
+    transform: translate(-25%, -30%);
+    color: #000000;}
+
+  /* Aajao boss dikha dunga text */
+  .boss {
+    position: absolute;
+    font-family: 'Font1';
+    font-size: 45px;
+    line-height: 50px;
+    top: 80%;
+    left: 35%;
+    transform: translate(-25%, -30%);
+    color: #ffffff;
+    text-shadow: 
+    -3px -3px 0 black,
+    3px -3px 0 black,
+    -3px 3px 0 black,
+    3px 3px 0 black;
+}
+  
