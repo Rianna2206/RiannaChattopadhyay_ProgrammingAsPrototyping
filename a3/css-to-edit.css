@@ -299,6 +299,8 @@
     color: white;
     border-radius: 30px;
     box-shadow: 4px 4px #ccc;
+    margin-top:-10px;
+    margin-bottom: 50px;
 }
 .buttons:hover {
     background-color: white;
