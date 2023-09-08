@@ -1,0 +1,178 @@
+/* Overall / Resets --- DO NOT EDIT THIS SECTION ---------------------------- */
+
+html  {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-size: 14px;
+}
+
+body  {
+  margin: 0;
+  padding: 0;
+  height: 100%;   
+  width: 100%;     
+}
+
+canvas {
+  display: block;
+}
+
+
+*   { 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+}
+
+/*  Header ------------------------------------------------ */
+
+header {
+  width: 100%; /* do not edit this */
+  height: 60px; /* do not edit this */
+  /* border-bottom: 2px solid black; */
+  display: flex;
+  background-color: #0171A9;
+  justify-content: space-between;
+
+}
+
+
+/*  Main Container ------------------------------------------------ */
+
+#main-container {
+  width: 100%;
+  height: calc(100vh - 100px); /* do not edit this */
+  display: flex; /* do not edit this */
+  flex-direction: row;
+  overflow: hidden;
+  background-color: rgb(26, 26, 26);
+
+}
+
+/*  Column One --- Container for Controls -------------------- */
+
+
+#column-one {
+  width: 40%;
+  height: calc(100vh - 60px);
+  background-color: rgb(15, 15, 15);
+  border-right: 1px solid black;
+  overflow: scroll;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* gap: 20px; */
+  align-content: left;
+  margin-top: -15px;
+}
+
+
+/*  Column Two --- Container for Canvas -------------------- */
+
+#column-two {
+  width: 80%;
+  height: calc(100vh - 60px);
+  background-color: rgb(26, 26, 26);
+  display: flex;  /* do not edit this */
+  align-items: center; /* do not edit this */
+  justify-content: center; 
+}
+.top{
+  height: calc(100vh - 50px); ;
+  margin-bottom: 35px ;
+  margin-top: 85px ;
+  text-align: center;
+}
+
+
+/* DO NOT EDIT THE BELOW SECTION, unless you know what you're doing */
+
+/*  Alert -------------------- */
+
+#alert {
+  display: none; 
+}
+
+
+/*  MEDIA QUERIES --- (RESPONSIVE) ------------------------------------------------ */
+
+@media screen and (max-width: 600px) {
+
+  #main-container {
+    width: 100%;
+    height: calc(100vh - 100px); /* do not edit this */
+    display: flex; /* do not edit this */
+    flex-direction: column-reverse;
+    overflow:hidden;
+    background-color: rgb(26, 26, 26);
+    gap: 25px;
+  }
+
+  #column-one {
+    width: 100%;
+    height: 35%;
+    padding: 4px;
+    background-color: rgb(15, 15, 15);
+    justify-content : top;
+    flex-direction: row;
+    flex-wrap:wrap;
+  
+  }
+
+  #column-two {
+    width: 100%;
+    height: 65%;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    flex-direction: column;
+    /* flex-shrink:calc((100vh - 40px)/3); */
+  }
+  .top{
+    padding: 50px;
+    height: calc(50vh - 50px);
+    margin-bottom: 35px ;
+    margin-top: 65px ;
+    text-align: center;
+  }
+  .radio {
+    display: flexbox;
+    flex-direction: column;
+    align-items: left;
+    flex-wrap: wrap;
+  }
+  #two{
+   
+    margin-right: 20px;
+  }
+  #group{
+   
+    margin-right: 5px;
+  }
+  #five{
+    
+    margin-right: 30px;
+    display: flexbox;
+    flex-direction: column;
+    align-items: left;
+  }
+  #seven{
+   
+    width:200px;
+    margin-right: 5px;
+  }
+  #eight{
+      
+    margin-top: 20px;
+  }
+
+
+}
+
+
+
+
