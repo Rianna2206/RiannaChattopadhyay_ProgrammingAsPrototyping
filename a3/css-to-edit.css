@@ -1,0 +1,340 @@
+@font-face {
+    font-family: 'Abril'; /* Give your font a name */
+    src: url('./fonts/AbrilFatface-Regular.ttf') format('ttf'); /* URL to your font file */
+    font-weight: normal; /* You can specify font-weight if needed */
+    font-style: normal; /* You can specify font-style if needed */
+  }
+  @font-face {
+    font-family: 'Lato'; /* Give your font a name */
+    src: url('./fonts/Lato-Italic.ttf') format('ttf'); /* URL to your font file */
+    font-weight: normal; /* You can specify font-weight if needed */
+    font-style: normal; /* You can specify font-style if needed */
+  }
+  @font-face {
+    font-family: 'Poppins'; /* Give your font a name */
+    src: url('./fonts/Poppins-ExtraBold.ttf') format('ttf'); /* URL to your font file */
+    font-weight: normal; /* You can specify font-weight if needed */
+    font-style: normal; /* You can specify font-style if needed */
+  }
+
+  
+
+#head{
+    font-family: "futura-pt-bold", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    margin-top: 18px;
+    /* font-weight: bold;
+    font-size: 20px; */
+    color: rgb(249, 249, 249); 
+}
+#logo-img{
+    width: auto;
+}
+#login-img{
+    width: auto;
+    display:flex;
+    align-items: center;
+}
+
+
+#topg{
+    background-color: #e1e0e0;
+}
+#refresh{
+    font-family: "futura-pt", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    color:#0078ac;
+}
+#banner{
+    width: 100%; /* do not edit this */
+    height: 40px; /* do not edit this */
+    border-bottom: 2px solid black;
+    display: flex;
+    background-color: #e1e0e0;
+    font-family: "futura-pt", sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    color: #0171A9;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+
+#column-one {
+    padding: 20px;
+    background-color: rgb(15, 15, 15);
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+#column-two {
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.overlay {
+    display:none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 999;
+  }
+  .popup {
+    font-family: "futura-pt", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    background-color: white;
+    padding: 20px;
+    margin: 50px;
+  }
+  #closed{
+    font-family: "futura-pt", sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-size: 20px;
+    background-color: #0078ac;
+    fill: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+  }
+  #closed:hover{
+    background-color: #025071;
+    color: white;
+
+  }
+
+
+
+#two{
+    margin-top: -18px ;
+    font-size: 10px;
+}
+#three{
+    margin-bottom: -18px ;
+}
+#four{
+    margin-bottom: 0px ;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+#seven{
+    margin-bottom: 18px ;
+}
+
+ 
+.dropdown{
+    position: relative;
+    width: 100%;
+    height: 35px;
+
+    margin: 0px;
+    padding: 4px;
+    border: none;
+    background-color: white;
+    border-radius: 2.5px;
+   
+    box-shadow: 4px 4px #ccc;
+    
+
+    font-family: "futura-pt", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    color:#0078ac;
+    cursor: pointer;
+}
+.dropdown:hover{
+    background-color:#e7e7e7;
+}
+
+
+.checkbox{
+    position: relative;
+    width: 100%;
+    padding: 5px;
+    margin: 0px;
+    font-family: "futura-pt", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    color: #e7e7e7;
+
+}
+.checkbox :hover{
+    cursor: pointer;
+    font-style: bold;
+}
+.checkbox label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0px; /* Add some spacing between checkbox and text */
+    color: #ffffff; /* Change text color */
+}
+.checkbox input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 15px; 
+    height: 15px;
+    border: 2px solid #0171A9;
+    border-radius: 4px;
+    outline: none; /* Remove the default outline */
+    cursor: pointer;
+}
+
+/* Style the checkbox when it's checked */
+.checkbox input[type="checkbox"]:checked {
+    background-color: #0171A9; /* Change the background color when checked */
+    border: 2px solid white; /* Change the border color when checked */
+    transition: border-color 0.2s;
+}
+.checkbox:hover {
+    background-color: #f5f5f5;
+}
+
+.checkbox:hover label {
+    color: #555; /* Change text color on hover */
+    /* font-weight: bold; Add bold font on hover */
+}
+
+
+
+.input-titles{
+    font-family: "futura-pt", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    margin: 0;
+    padding: 5px;
+    border: none;
+    width:100%;
+    height:35px;
+    background-color: rgb(55, 55, 55);
+    color: white;
+    border-radius: 5px;
+}
+.input-titles:hover{
+    background-color: rgb(145, 145, 145);
+}
+.title{
+    font-family: "futura-pt-bold", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    color: #e7e7e7;
+}
+.text{
+    font-family: "futura-pt", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    color: #e7e7e7;
+}
+  
+
+.radio{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    gap: 5px;
+    /* margin-right: 20px; */
+    font-family: "futura-pt", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    color: #e7e7e7;
+    margin: 5px;
+}
+.radio :hover{
+    cursor: pointer;
+    font-style: bold;
+    background-color: #f5f5f5;
+    color: #555;
+
+}
+.radio input[type="radio"] {
+    appearance:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    outline: white;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+.radio input[type="radio"]::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #e7e7e7;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    left: -2px;
+    transition: background-color 0.2s;
+}
+.radio input[type="radio"]:checked::before{
+    background-color: #0078ac; 
+    border-radius: 50%;
+}
+
+
+
+.buttons {
+    font-family: "futura-pt-bold", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    width:100%;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    background-color:#e31837;
+    color: white;
+    border-radius: 30px;
+    box-shadow: 4px 4px #ccc;
+    margin-top:-10px;
+    margin-bottom: 30px;
+}
+.buttons:hover {
+    background-color: white;
+    color: #e31837;
+    cursor: pointer;
+    box-shadow: 4px 4px #e31837;
+}
+
+
+@media (min-width: 600px) and (max-width: 810px) {
+    #four {
+        gap:0px;
+        display: flexbox;
+        flex-direction: column;
+    }
+
+    .radio {
+        display: flexbox;
+        flex-direction: column;
+        align-items: left;
+    }
+    .top{
+        height: calc(100vh - 50px); ;
+        margin-bottom: 35px ;
+        margin-top: 85px ;
+        text-align: center;
+      }
+  }
